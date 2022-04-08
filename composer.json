@@ -1,0 +1,44 @@
+{
+    "name": "hublinkaz/laravel-ui-adminlte",
+    "description": "Laravel frontend preset for AdminLTE Theme",
+    "keywords": [
+        "laravel",
+        "preset",
+        "adminlte"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aga Mustafayev",
+            "email": "info@hublink.az"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0",
+        "hublinkaz/laravel-generator-helpers": "^4.0",
+        "laravel/ui": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hublinkaz\\AdminLTEPreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hublinkaz\\AdminLTEPreset\\AdminLTEPresetServiceProvider",
+                "Hublinkaz\\AdminLTEPreset\\FortifyAdminLTEPresetServiceProvider"
+            ]
+        }
+    },
+    "funding": [
+        {
+            "type": "",
+            "url": ""
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
